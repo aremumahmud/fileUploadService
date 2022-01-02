@@ -10,7 +10,7 @@ app.use(upload({
 }));
 app.use(bodyparser())
 app.use("/api" , router)
-app.listen(2000)
+app.listen(process.env.PORT || 2000)
 app.post("/" ,(req, res)=>{
   console.log(req.files ,req.body)
   res.send("sucess")
