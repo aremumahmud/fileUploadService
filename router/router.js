@@ -4,6 +4,7 @@ var createSpace = require("../lib/createSpace")
 var uploadToSpace = require("../lib/uploadToSpace")
 var getFromSpace = require("../lib/getFromSpace")
 var getRawFile = require("../lib/getRawFile")
+var serverId = fs.readFileSync("../lib/server.id").toString()
 
 
 
@@ -12,7 +13,9 @@ router
      .get(createSpace)
 router
     .route("/uploadToSpace")
-    .post(uploadToSpace)
+    .post((req ,res)=>{
+        uploadToSpace(req , res , serverId)
+    })
 router
     .route("/getFromSpace")
     .get(getFromSpace)
