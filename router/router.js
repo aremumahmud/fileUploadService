@@ -5,7 +5,7 @@ var createSpace = require("../lib/createSpace")
 var uploadToSpace = require("../lib/uploadToSpace")
 var getFromSpace = require("../lib/getFromSpace")
 var getRawFile = require("../lib/getRawFile")
-var serverId = fs.readFileSync("serverId.txt").toString()
+var serverId = "%&-74%4:653"gt6f67et"
 
 
 
