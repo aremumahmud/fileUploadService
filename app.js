@@ -2,13 +2,8 @@ var express = require("express")
 var upload = require("express-fileupload")
 var bodyparser =  require("body-parser")
 var router = require("./router/router")
-var serverId = fs.readFileSync("./lib/server.id"))
 
 var app = express()
-app.use((req,res,next)=>{
-     req.serverId = serverId
-     next()
-})
 app.use(upload({
   limits: { fileSize: 50 * 1024 * 1024 },
 }));
