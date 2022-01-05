@@ -11,7 +11,7 @@ var serverId = "%&-74%4:653gt6f67et"
 
 router 
      .route("/createSpace")
-     .get(createSpace)
+     .post(createSpace)
 router
     .route("/uploadToSpace")
     .post((req ,res)=>{
