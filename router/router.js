@@ -1,4 +1,5 @@
 var express = require("express")
+var fs = require("fs")
 var router = express.Router()
 var createSpace = require("../lib/createSpace")
 var uploadToSpace = require("../lib/uploadToSpace")
