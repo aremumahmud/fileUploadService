@@ -2,8 +2,11 @@ var express = require("express")
 var upload = require("express-fileupload")
 var bodyparser =  require("body-parser")
 var router = require("./router/router")
+var path = require("path")
+
 
 var app = express()
+app.use(express.static(path.join(__dirname,"/public")))
 app.use(upload({
   limits: { fileSize: 50 * 1024 * 1024 },
 }));
