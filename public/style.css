@@ -1,7 +1,9 @@
 #one
 {
-  margin-top:50px;
+  margin-top:-70px;
  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+ border-radius: 5px;
+
 }
 .it .btn-orange
 {
@@ -45,7 +47,7 @@
 .it .btn-new, .it .btn-next
 {
 	margin: 30px 0px;
-	border-radius: 0px;
+	border-radius: 10px;
 	background-color: #333;
 	color: #f5f5f5;
 	font-size: 16px;
@@ -53,10 +55,10 @@
 }
 .it .btn-next
 {
-	background-color: #ff4d0d;
+	background-color:#163158;
 	color: #fff;
 }
-.it .btn-check
+.it .btn-checky
 {
   cursor:pointer;
   line-height:54px;
@@ -108,4 +110,16 @@ p
   position: absolute;
   top : 30%;
   left: 10%;
+}
+
+.blue-border{
+    border : 3px dotted blue;
+    padding : 20px
+}
+.header{
+  position: absolute;
+}
+.exp{
+  
+ 
 }
